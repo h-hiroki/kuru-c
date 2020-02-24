@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-int sum(int);
+int sum(int, int);
 
-int main(void)
+int main(void) /* プロトタイプ宣言 */
 {
-    sum(50);
+    sum(50, 100);
     return 0;
 }
 
-int sum(int max)
+int sum(int min, int max)
 {
-    printf("%d\n", (1 + max) * max / 2);
+    printf("%d\n", (min + max) * max / 2);
     return 0;
 }
