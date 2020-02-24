@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void)
 {
-    char str[6] = {'M', 'A', 'R', 'I', 'O', '\0'};
-    printf("%s\n", str);
+    char str[] = "145";
+    int suuti = atoi(str);
+    printf("%d\n", suuti);
     return 0;
 }
