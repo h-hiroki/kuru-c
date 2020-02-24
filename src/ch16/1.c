@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 struct student {
     int year;
@@ -13,7 +14,7 @@ int main(void)
 {
     struct student data;
 
-    data.year = 10;
-    printf("%d\n", data.year);
+    strcpy(data.name, "MARIO");
+    printf("%s\n", data.name);
     return 0;
 }
